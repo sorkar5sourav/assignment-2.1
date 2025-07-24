@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.noto {
+  font-family: "Noto Serif", serif;
+}
+.orange {
+  color: #e95a08;
+}
+p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  align-items: center;
+  padding: 20px;
+  margin: 30px auto;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navigation ul a {
+  text-decoration: none;
+}
+.home {
+  color: #252432;
+  font-weight: bold;
+}
+.shop {
+  color: #8987a1;
+}
+.about {
+  color: #8987a1;
+}
+.cart {
+  color: #000;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 1140px;
+  margin: 90px auto;
+}
+.banner-content {
+  max-width: 50%;
+  align-items: flex-end;
+}
+.banner-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  text-align: left;
+}
+.banner-content p {
+  text-align: left;
+}
+.banner-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.card-title {
+  margin: 30px auto;
+  max-width: 1140px;
+  text-align: center;
+}
+.card-title h2 {
+  font-size: 3.125rem;
+  margin-bottom: 10px;
+}
+.card-title p {
+  max-width: 890px;
+  margin: auto;
+}
+.card-block {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card-block div {
+  text-align: center;
+}
+.card-block div button {
+  background-color: #e95a08;
+  padding: 19px 80px;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  .navigation {
+    align-items: center;
+    margin: 67px 16px 0px 16px;
+    padding: 0;
+  }
+  .navigation img {
+    height: 38px;
+    width: 63px;
+  }
+  .home,
+  .shop,
+  .about {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .banner-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+  }
+  .banner-image {
+    max-width: 100%;
+    height: auto;
+    margin: 28px 0;
+  }
+  .card-title h2 {
+    font-size: 1.5rem;
+  }
+  .card-block {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 380px;
+  }
+}

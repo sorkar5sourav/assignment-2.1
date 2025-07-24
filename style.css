@@ -58,6 +58,25 @@
   gap: 20px;
   margin-top: 20px;
 }
+.card-block div {
+  text-align: center;
+}
+.card-block div button {
+  background-color: #e95a08;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 19px 80px;
+}
+.card-block div h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.card-block div h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
 .discription {
   display: flex;
   justify-content: space-between;
@@ -105,13 +124,11 @@
 }
 
 .card a {
-  font-size: 16px;
   color: white;
-  font-weight: 600;
+
   text-decoration: underline;
 }
 
-/* Background Images (use actual image URLs) */
 .bloom {
   background-image: url("assets/deal-bloom.png");
 }
@@ -123,9 +140,11 @@
 .zabo {
   background-image: url("assets/deal-zabo.png");
 }
+
 .subscribe {
   background-image: url("assets/news-letter-bg.png");
   background-size: cover;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
