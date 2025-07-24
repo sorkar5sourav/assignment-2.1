@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+.noto {
+  font-family: "Noto Serif", serif;
+}
+
+/*navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #8987a1;
+  font-weight: bold;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+  padding: 20px;
+}
+.banner-title {
+  font-size: 65px;
+  font-weight: bold;
+}
+.orange {
+  color: #e95a08;
+}
+.card-section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.card-header {
+  text-align: center;
+}
+.card-header h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.discription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.right-card {
+  height: 420px;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.card a {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Background Images (use actual image URLs) */
+.bloom {
+  background-image: url("assets/deal-bloom.png");
+}
+
+.ana {
+  background-image: url("assets/deal-ana.png");
+}
+
+.zabo {
+  background-image: url("assets/deal-zabo.png");
+}
+.subscribe {
+  background-image: url("assets/news-letter-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 533px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  margin: auto;
+  max-width: 1140px;
+  text-align: center;
+}
+/*shared styes */
+#light {
+  color: #000;
+}
