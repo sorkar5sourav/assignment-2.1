@@ -9,9 +9,16 @@
 .orange {
   color: #e95a08;
 }
-p {
+p,
+li {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
 }
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -70,17 +77,14 @@ p {
   max-width: 1140px;
   text-align: center;
 }
-.card-title h2 {
-  font-size: 3.125rem;
-  margin-bottom: 10px;
-}
+
 .card-title p {
   max-width: 890px;
   margin: auto;
 }
 .card-block {
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -88,15 +92,75 @@ p {
 .card-block div {
   text-align: center;
 }
-.card-block div button {
+.card-block div img {
+  height: auto;
+  width: 100%;
+}
+button {
   background-color: #e95a08;
   padding: 19px 80px;
   color: white;
   font-weight: 600;
   border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  background-color: #1458d6;
+}
+.flower-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: 211px auto;
+}
+.flower-store div {
+  width: 50%;
+}
+.store-image {
+  display: flex;
+}
+.badge {
+  position: relative;
+  bottom: 140px;
+  right: 190px;
+  height: 298px;
+  width: auto;
 }
 
-@media screen and (max-width: 576px) {
+.plant-lover {
+  margin: 39px 0 39px 63px;
+}
+.deal-title {
+  text-align: center;
+  margin: auto;
+}
+.deal-title p {
+  max-width: 60%;
+  margin: auto;
+}
+.deals {
+  display: flex;
+  gap: 30px;
+}
+.right {
+  gap: 30px;
+}
+.ana-text,
+.bloom-text,
+.zabo-text,
+a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  p,
+  li {
+    font-size: 14px;
+  }
+  main {
+    max-width: 90%;
+  }
   .navigation {
     align-items: center;
     margin: 67px 16px 0px 16px;
@@ -104,7 +168,7 @@ p {
   }
   .navigation img {
     height: 38px;
-    width: 63px;
+    width: 20%;
   }
   .home,
   .shop,
@@ -118,7 +182,7 @@ p {
   .banner-content {
     max-width: 100%;
     text-align: center;
-    margin: 0;
+    margin: 0 20px;
   }
   .banner-content h1 {
     font-size: 1.5rem;
@@ -129,11 +193,53 @@ p {
     height: auto;
     margin: 28px 0;
   }
+  .card-section {
+    margin: 0 20px;
+    align-items: center;
+    text-align: center;
+  }
   .card-title h2 {
     font-size: 1.5rem;
   }
   .card-block {
     grid-template-columns: repeat(2, 1fr);
     max-width: 380px;
+  }
+  .card-block div {
+    max-width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+  button {
+    padding: 10px 29px;
+  }
+  .card-block div img {
+    height: 195px;
+  }
+  .flower-store {
+    flex-direction: column;
+    margin: 40px 15px;
+  }
+  .flower-store div {
+    width: 90%;
+  }
+  .badge {
+    display: none;
+  }
+  .bg {
+    height: 100%;
+    width: auto;
+    margin: auto;
+  }
+  .plant-lover {
+    margin: 15px 0;
+  }
+  .plant-lover h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .plant-lover ul {
+    margin-left: 20px;
   }
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Offers</title>
+    <style>
+      body {
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        width: 250px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+      .card.small {
+        width: 200px;
+        height: 250px;
+      }
+      .card p {
+        margin: 5px 0;
+      }
+      .card a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      /* Darken background images */
+      .card.bloom {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/deal-bloom.png");
+      }
+      .card.ana {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("https://via.placeholder.com/250x300?text=Ana+Plant");
+      }
+      .card.zabo {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("https://via.placeholder.com/500x300?text=Zabo+Plant");
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card small bloom">
+        <p>60% Off | Bloom Plant</p>
+        <a href="#">Shop Now</a>
+      </div>
+      <div class="card zabo">
+        <p>25% Off | Zabo Plant</p>
+        <a href="#">Shop Now</a>
+      </div>
+      <div class="card small ana">
+        <p>30% Off | Ana Plant</p>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+  </body>
+</html>
