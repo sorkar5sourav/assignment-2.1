@@ -109,6 +109,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  text-align: center;
 }
 button:hover {
   background-color: #1458d6;
@@ -219,7 +220,7 @@ a {
 }
 .newsletter-text {
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 65%;
   top: 50%;
   left: 50%;
@@ -230,6 +231,8 @@ a {
 .nl-form {
   display: flex;
   height: 50px;
+  max-width: 80%;
+  margin: auto;
 }
 .nl-form input {
   padding: 20px;
@@ -277,6 +280,7 @@ footer {
     display: none;
   }
   .banner {
+    max-width: 100%;
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -290,16 +294,17 @@ footer {
     margin-bottom: 13px;
   }
   .banner-image {
+    display: block;
     width: 100%;
     height: auto;
   }
   .card-section {
-    margin: 0 20px;
+    width: 100%;
     align-items: center;
     text-align: center;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 16px;
   }
   .card-block {
@@ -319,8 +324,9 @@ footer {
     height: 195px;
   }
   .flower-store {
+    max-width: 100%;
     flex-direction: column;
-    margin: 40px 15px;
+    margin: 40px 0;
   }
   .flower-store div {
     width: 90%;
@@ -328,10 +334,11 @@ footer {
   .badge {
     display: none;
   }
+  .store-image {
+  }
   .bg {
-    height: 100%;
-    width: auto;
-    margin: auto;
+    height: 396px;
+    width: 358px;
   }
   .plant-lover {
     margin: 15px 0;
@@ -341,11 +348,16 @@ footer {
     margin-bottom: 15px;
   }
   .plant-lover ul {
-    margin-left: 20px;
+    padding-left: 10px;
+    margin-left: 5px;
   }
   .Subscribe {
     font-size: 10;
     width: 30%;
+  }
+  .deal-title p {
+    max-width: 90%;
+    margin: auto;
   }
   .deals {
     flex-direction: column;
@@ -356,6 +368,18 @@ footer {
   }
   .zabo-text h4 {
     font-size: 20px;
+  }
+  .newsletter {
+    height: 275px;
+  }
+  .newsletter-text {
+    width: 90%;
+  }
+  .nl-form {
+    max-width: 100%;
+  }
+  .Subscribe {
+    width: 40%;
   }
   footer {
     padding: 10px;
