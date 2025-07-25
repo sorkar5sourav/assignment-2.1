@@ -1,3 +1,4 @@
+/*shared style*/
 .noto {
   font-family: "Noto Serif", serif;
 }
@@ -23,6 +24,7 @@ h4 {
   font-weight: bold;
   margin: 0;
 }
+/*navbar*/
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -52,6 +54,7 @@ h4 {
 .cart {
   color: #000;
 }
+/*banner styles*/
 .banner {
   display: flex;
   justify-content: center;
@@ -76,6 +79,7 @@ h4 {
   max-width: 100%;
   height: auto;
 }
+/*card section styles*/
 .card-title {
   margin: 30px auto;
   max-width: 80%;
@@ -114,6 +118,7 @@ button {
 button:hover {
   background-color: #1458d6;
 }
+/*advertisement section*/
 .flower-store {
   display: flex;
   justify-content: center;
@@ -138,6 +143,7 @@ button:hover {
 .plant-lover {
   margin: 39px 0 39px 63px;
 }
+/*brainrot section . i had to skip my cousins marriage to finish just this section*/
 .deal-title {
   text-align: center;
   margin: auto;
@@ -208,15 +214,13 @@ button:hover {
 a {
   color: #ffffff;
 }
-
+/*subscription section*/
 .newsletter {
   background-image: url(assets/news-letter-bg.png);
   background-color: #cccccc;
   height: 540px;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 .newsletter-text {
   text-align: center;
@@ -242,6 +246,7 @@ a {
 .Subscribe {
   width: 20%;
 }
+/*footer styles*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -259,6 +264,7 @@ footer {
 .social-link img {
   margin-right: 20px;
 }
+/*respnsive styles*/
 @media screen and (max-width: 576px) {
   p,
   li {
@@ -294,7 +300,6 @@ footer {
     margin-bottom: 13px;
   }
   .banner-image {
-    display: block;
     width: 100%;
     height: auto;
   }
@@ -334,8 +339,7 @@ footer {
   .badge {
     display: none;
   }
-  .store-image {
-  }
+
   .bg {
     height: 396px;
     width: 358px;
